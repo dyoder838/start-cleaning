@@ -55,7 +55,7 @@ export default function ButtonAppBar() {
 
                     </Menu>
                     <Typography variant="h6" className={classes.title}>
-                        Helping Hands - Corbett, Oregon
+                        Start Cleaning LLC
                     </Typography>
                 </Toolbar>
             </AppBar>
