@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     sectionMobile: {
+        marginRight: theme.spacing(2),
         display: 'flex',
         [theme.breakpoints.up('md')]: {
             display: 'none',
@@ -44,8 +45,11 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "transparent",
     },
     logo: {
+        
         display: "flex",
-        width: "200px",
+        width: "100%",
+        maxWidth: "150px",
+        height: "auto",
     },
     logoPos: {
         position: 'absolute', 
@@ -130,9 +134,11 @@ export default function PrimarySearchAppBar() {
 
                     <IconButton
                         edge="start"
-                        className={classes.menuButton}
-                        color="inherit"
-                        aria-label="open drawer"
+                        className={classes.sectionMobile}
+                        color="black"
+                        aria-label="open drawer" aria-controls={mobileMenuId}
+                        aria-haspopup="true"
+                        onClick={handleMobileMenuOpen}
                     >
                         <MenuIcon />
                     </IconButton>
@@ -155,17 +161,14 @@ export default function PrimarySearchAppBar() {
 
                     </div>
 
-                    <div className={classes.sectionMobile}>
+                    {/* <div className={classes.sectionMobile}>
                         <IconButton
-                            aria-label="show more"
-                            aria-controls={mobileMenuId}
-                            aria-haspopup="true"
-                            onClick={handleMobileMenuOpen}
-                            color="inherit"
+                            
+                           
                         >
                             <MoreIcon />
                         </IconButton>
-                    </div>
+                    </div> */}
 
                 </Toolbar>
 

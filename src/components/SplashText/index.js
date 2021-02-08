@@ -6,12 +6,20 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexWrap: 'wrap',
+    position: "center",
+
     '& > *': {
       margin: theme.spacing(1),
       width: theme.spacing(16),
       height: theme.spacing(16),
     },
   },
+
+textBox: {
+    
+    textAlign: "center",
+
+},
 }));
 
 export default function SimplePaper() {
@@ -20,7 +28,7 @@ export default function SimplePaper() {
   return (
     <div className={classes.root}>
       
-      <Paper elevation={0}> </Paper>
+      <Paper elevation={0} className={classes.textBox}> Clean Your Stuff </Paper>
       
     </div>
   );
