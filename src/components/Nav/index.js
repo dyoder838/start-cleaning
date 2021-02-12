@@ -6,30 +6,20 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
-import MoreIcon from '@material-ui/icons/MoreVert';
 import Button from '@material-ui/core/Button';
 import Logo from '../../assets/SCLogo.png'
 
 const useStyles = makeStyles((theme) => ({
     grow: {
         flexGrow: 1,
-    },
-    menuButton: {
-        marginRight: theme.spacing(2),
-    },
-    title: {
-        display: 'none',
-        [theme.breakpoints.up('sm')]: {
-            display: 'block',
-        },
-    },
-    inputRoot: {
-        color: 'inherit',
+        position: 'relative',
     },
     sectionDesktop: {
         display: 'none',
         [theme.breakpoints.up('md')]: {
             display: 'flex',
+            position: 'absolute',
+            right: '0px',
         },
     },
     sectionMobile: {
@@ -41,22 +31,23 @@ const useStyles = makeStyles((theme) => ({
     },
     border: {
         boxShadow: "none",
-        position: "static",
+        position: "relative",
         backgroundColor: "transparent",
+        justifyContent: 'center',
     },
     logo: {
-        
-        display: "flex",
-        width: "100%",
-        maxWidth: "150px",
-        height: "auto",
+        maxHeight: '75px',
+       
+        display: 'flex',
+        justifyContent: 'center',
     },
     logoPos: {
-        position: 'absolute', 
-    left: '50%', 
-    top: '80%',
-    transform: 'translate(-50%, -50%)'
+        
+        position: 'absolute',
+        justifyContent: 'center',
+        display: 'flex'
     },
+
 
 }));
 
@@ -110,17 +101,17 @@ export default function PrimarySearchAppBar() {
         >
             <MenuItem>
                 <Button aria-label="home" >Home</Button>
-                
+
             </MenuItem>
 
             <MenuItem>
                 <Button aria-label="about us" color="inherit">About Us</Button>
-                
+
             </MenuItem>
 
             <MenuItem>
                 <Button aria-label="services" color="inherit">Services</Button>
-                
+
             </MenuItem>
 
         </Menu>
@@ -128,9 +119,18 @@ export default function PrimarySearchAppBar() {
 
     return (
         <div className={classes.grow}>
+
+
+
             <AppBar className={classes.border}>
 
-                <Toolbar>
+                <div className={classes.logoPos}>
+
+                    <img src={Logo} alt="Start Cleaning logo" className={classes.logo} />
+
+                </div>
+
+                <Toolbar className={classes.tbar}>
 
                     <IconButton
                         edge="start"
@@ -143,13 +143,8 @@ export default function PrimarySearchAppBar() {
                         <MenuIcon />
                     </IconButton>
 
-                    <div className={classes.logoPos}>
 
-                        <img src={Logo} alt="Start Cleaning logo" className={classes.logo} />
 
-                    </div>
-
-                    <div className={classes.grow} />
 
                     <div className={classes.sectionDesktop}>
 
@@ -160,15 +155,6 @@ export default function PrimarySearchAppBar() {
                         <Button aria-label="services" color="black">Services</Button>
 
                     </div>
-
-                    {/* <div className={classes.sectionMobile}>
-                        <IconButton
-                            
-                           
-                        >
-                            <MoreIcon />
-                        </IconButton>
-                    </div> */}
 
                 </Toolbar>
 

@@ -26,12 +26,10 @@ function App() {
 
         <Router>
 
-            <Grid container className={classes.root} >
-
-                <Grid item xs={12} className={classes.navBar}></Grid>
-                <Nav />
-
-            </Grid>
+        
+                    
+            <Nav />
+           
 
             <Switch>
 
