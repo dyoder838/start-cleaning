@@ -35,6 +35,11 @@ const useStyles = makeStyles((theme) => ({
         left: '50%',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
+        backgroundColor: 'rgb(0,0,0)',
+        backgroundColor: 'rgba(0,0,0, 0.4)',
+        color: 'white', 
+        fontWeight: 'bold',
+        zIndex: 2, 
     }
 }));
 
@@ -53,7 +58,7 @@ export default function SimplePaper() {
                     <Typography variant="h3">Its time to Start Cleaning</Typography>
                     <Typography variant="h4">Thorough. Efficient. Clean</Typography>
                     <Typography variant="h5">Call for a consultation</Typography>
-                    <Typography variant="h5">1 888 370 0123</Typography>
+                    <Typography component="a" color='inherit' variant="h5" href="tel:18883700123">1 (888) 370-0123</Typography>
                 </div>
             </Paper>
 
