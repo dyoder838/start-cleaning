@@ -11,8 +11,41 @@ import Logo from '../../assets/SCLogo.png'
 
 const useStyles = makeStyles((theme) => ({
     grow: {
-        flexGrow: 1,
-        position: 'relative',
+        flexGrow: 1,    
+    },
+    appBar: {
+        boxShadow: "none",
+        position: 'static',
+        backgroundColor: "transparent",    
+    },
+    logoPos: {
+        position: 'absolute',
+        left: '50%',
+        top: 50,
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+    },
+    logo: {
+        maxHeight: '100px',
+        display: 'flex',
+        background: 'transparent',
+        top: '10px',
+    },
+    toolbar: {
+
+    },
+    sectionMenuIcon: {
+        position: 'static',
+        right: '0px',
+    },
+    sectionMobile: {
+        marginLeft: theme.spacing(2),
+        display: 'flex',
+        [theme.breakpoints.up('md')]: {
+            display: 'none',
+            position: 'absolute',
+            right: '0px',
+        },
     },
     sectionDesktop: {
         display: 'none',
@@ -22,33 +55,6 @@ const useStyles = makeStyles((theme) => ({
             right: '0px',
         },
     },
-    sectionMobile: {
-        marginRight: theme.spacing(2),
-        display: 'flex',
-        [theme.breakpoints.up('md')]: {
-            display: 'none',
-        },
-    },
-    border: {
-        boxShadow: "none",
-        position: "relative",
-        backgroundColor: "transparent",
-        justifyContent: 'center',
-    },
-    logo: {
-        maxHeight: '75px',
-       
-        display: 'flex',
-        justifyContent: 'center',
-    },
-    logoPos: {
-        
-        position: 'absolute',
-        justifyContent: 'center',
-        display: 'flex'
-    },
-
-
 }));
 
 export default function PrimarySearchAppBar() {
@@ -120,9 +126,7 @@ export default function PrimarySearchAppBar() {
     return (
         <div className={classes.grow}>
 
-
-
-            <AppBar className={classes.border}>
+            <AppBar className={classes.appBar}>
 
                 <div className={classes.logoPos}>
 
@@ -130,7 +134,7 @@ export default function PrimarySearchAppBar() {
 
                 </div>
 
-                <Toolbar className={classes.tbar}>
+                <Toolbar className={classes.toolbar}>
 
                     <IconButton
                         edge="start"
@@ -140,11 +144,8 @@ export default function PrimarySearchAppBar() {
                         aria-haspopup="true"
                         onClick={handleMobileMenuOpen}
                     >
-                        <MenuIcon />
+                        <MenuIcon className={classes.sectionMenuIcon}/>
                     </IconButton>
-
-
-
 
                     <div className={classes.sectionDesktop}>
 

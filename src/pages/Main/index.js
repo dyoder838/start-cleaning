@@ -17,16 +17,6 @@ const useStyles = makeStyles((theme) => ({
         justify: "center",
         alignItems: "stretch",
     },
-    info: {
-        marginTop: 10,
-    },
-    buttonsGrid: {
-
-        marginTop: 10,
-
-    },
-  
-
 }));
 
 export default function MainPage() {
@@ -34,7 +24,8 @@ export default function MainPage() {
     const classes = useStyles();
 
     return (
-        <Grid container className={classes.root} spacing={2}>
+        
+        <Grid container className={classes.root}>
             
            
             <Grid item xs={12}>
