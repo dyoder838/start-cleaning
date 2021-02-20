@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -11,11 +11,29 @@ import Typography from '@material-ui/core/Typography';
 import SplashText from "../../components/SplashText";
 import "./style.css";
 import Art1Image from '../../assets/gloves.jpg'
-import ArtImage2 from '../../assets/cleaningInProgress.jpg'
+import ArtImage2 from '../../assets/open.jpg'
 import ArtImage3 from '../../assets/pride.jpg'
 
+const theme = createMuiTheme();
 
-
+theme.typography.body2 = {
+  fontSize: '2rem',
+  '@media (min-width:600px)': {
+    fontSize: '2rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '1.5rem',
+  },
+};
+theme.typography.h5 = {
+    fontSize: '2rem',
+    '@media (min-width:600px)': {
+      fontSize: '2rem',
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '1.5rem',
+    },
+  };
 
 const useStyles = makeStyles((theme) => ({
 
@@ -48,8 +66,8 @@ const useStyles = makeStyles((theme) => ({
 
     },
     media1: {
-        width: "50%",
-        height: '200px',
+        width: "100%",
+        height: '300px',
         margin: "auto",
         top: "0",
     },
@@ -62,8 +80,8 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: 'none',
     },
     media2: {
-        width: "50%",
-        height: '200px',
+        width: "100%",
+        height: '300px',
         margin: "auto",
         top: "0",
     },
@@ -76,14 +94,15 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: 'none',
     },
     media3: {
-        width: "30%",
-        height: '300px',
+        width: "75%",
+        height: '400px',
         margin: "auto",
         top: "0",
     },
     button: {
         margin: 'auto'
-    }
+    },
+   
 
 }));
 
@@ -92,7 +111,7 @@ export default function MainPage() {
     const classes = useStyles();
 
     return (
-
+       
         <Grid container className={classes.root} spacing={2}>
 
 
@@ -134,18 +153,20 @@ export default function MainPage() {
                                 title="Cleaning with elbow-grease"
                             />
 
-                            <CardContent>
+                            <CardContent className={classes.font}>
 
                                 <Typography gutterBottom variant="h5" component="h2">
                                     Our Services
-                                    </Typography>
+                                </Typography>
 
+                                <ThemeProvider theme={theme}>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     We offer Commercial and residential cleaning services including:
                                     Move in and out, Recurring cleaning, and "I need a break" cleaning.
-                                        <br />
-                                        follow the link below for more specific details.
-                                    </Typography>
+                                    <br />
+                                    follow the link below for more specific details.
+                                </Typography>
+                                </ThemeProvider>
 
                             </CardContent>
 
@@ -180,14 +201,16 @@ export default function MainPage() {
                                 <Typography gutterBottom variant="h5" component="h2">
                                     Our Hours
                                     </Typography>
-
-                                <Typography variant="body2" color="textSecondary" component="p">
-                                    Monday - Friday
+                                
+                                <ThemeProvider theme={theme}>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                         Monday - Friday
                                         <br />
                                         8:00 AM - 5:00 PM
                                         <br />
                                         Special hours and days are possible upon request
                                     </Typography>
+                                </ThemeProvider>
 
                             </CardContent>
 
@@ -222,11 +245,14 @@ export default function MainPage() {
                                     Professional Service With Pride
                                 </Typography>
 
-                                <Typography variant="body2" color="textSecondary" component="p">
-                                We at Start Cleaning pride ourselves on offering quality work at a fair price. since our beginning, our main goal has been to exceed the expectations of every client by cleaning your home or office as if it were our own.
-                                <br />
-                                our team of seasoned professionals will clean your home to your exact specifications. for your home, we bring all of our own equipment and eco-friendly cleaning products.
-                                </Typography>
+                                <ThemeProvider theme={theme}>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                    We at Start Cleaning pride ourselves on offering quality work at a fair price. since our beginning, our main goal has been to exceed the expectations of every client by cleaning your home or office as if it were our own.
+                                    <br />
+                                    our team of seasoned professionals will clean your home to your exact specifications. for your home, we bring all of our own equipment and eco-friendly cleaning products.
+                                    </Typography>
+                                </ThemeProvider>
+
 
                             </CardContent>
 
@@ -234,7 +260,7 @@ export default function MainPage() {
 
                         <CardActions>
 
-                            <Button className={classes.button} size="small">
+                            <Button className={classes.button} size="small"  href="tel:+18883700123" >
                                 Call
                             </Button>
 
@@ -246,6 +272,6 @@ export default function MainPage() {
             </Grid>
 
         </Grid>
-
+        
     )
 }
