@@ -8,11 +8,12 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Footer from '../../components/Footer';
 import SplashText from "../../components/SplashText";
 import "./style.css";
-import Art1Image from '../../assets/gloves.jpg'
-import ArtImage2 from '../../assets/open.jpg'
-import ArtImage3 from '../../assets/pride.jpg'
+import Art1Image from '../../assets/gloves.jpg';
+import ArtImage2 from '../../assets/open.jpg';
+import ArtImage3 from '../../assets/pride.jpg';
 
 const theme = createMuiTheme();
 
@@ -269,6 +270,10 @@ export default function MainPage() {
                     </Card>
 
                 </Grid>
+            </Grid>
+
+            <Grid item sm={12}>
+                <Footer />
             </Grid>
 
         </Grid>
