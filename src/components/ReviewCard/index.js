@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SimpleCard() {
+export default function SimpleCard(prop) {
   const classes = useStyles();
   
 
@@ -31,10 +31,11 @@ export default function SimpleCard() {
       <CardContent>
        
         <Typography className={classes.title} variant="h5" component="h2">
-          Example Review
+          {prop.title}Example Review
         </Typography>
         
         <Typography className={classes.review} variant="body2" component="p">
+            {prop.review}
           {'"Start Cleaning Was Great"'}
         </Typography>
         

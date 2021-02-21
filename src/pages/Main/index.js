@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import Nav from '../../components/Nav';
 import CustomStyles from './style.module.css';
 import Footer from '../../components/Footer';
-import ReviewCard from '../../components/ReviewCard'
+// import ReviewCard from '../../components/ReviewCard'
 import Art1Image from '../../assets/gloves.jpg';
 import ArtImage2 from '../../assets/open.jpg';
 import ArtImage3 from '../../assets/pride.jpg';
@@ -173,8 +173,8 @@ export default function MainPage() {
                                     <Typography variant="body2" color="textSecondary" component="p">
                                         We offer Commercial and residential cleaning services including:
                                         Move in and out, Recurring cleaning, and "I need a break" cleaning.
-                                    <br />
-                                    follow the link below for more specific details.
+                                    {/* <br />
+                                    follow the link below for more specific details. */}
                                 </Typography>
                                 </ThemeProvider>
 
@@ -184,9 +184,9 @@ export default function MainPage() {
 
                         <CardActions>
 
-                            <Button className={classes.button} size="small">
+                            {/* <Button className={classes.button} size="small">
                                 Services
-                                </Button>
+                            </Button> */}
 
                         </CardActions>
 
@@ -228,9 +228,9 @@ export default function MainPage() {
 
                         <CardActions>
 
-                            <Button className={classes.button} href='/about' size="small">
+                            {/* <Button className={classes.button} href='/about' size="small">
                                 About Us
-                                </Button>
+                            </Button> */}
 
                         </CardActions>
 

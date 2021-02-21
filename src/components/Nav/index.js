@@ -110,7 +110,7 @@ export default function PrimarySearchAppBar() {
 
             </MenuItem>
 
-            <MenuItem>
+            {/* <MenuItem>
                 <Button aria-label="about us" href='/about' color="inherit">About Us</Button>
 
             </MenuItem>
@@ -118,7 +118,7 @@ export default function PrimarySearchAppBar() {
             <MenuItem>
                 <Button aria-label="services" color="inherit">Services</Button>
 
-            </MenuItem>
+            </MenuItem> */}
 
         </Menu>
     );
@@ -151,9 +151,9 @@ export default function PrimarySearchAppBar() {
 
                         <Button aria-label="Home" color="black" href='/'>Home</Button>
 
-                        <Button aria-label="about us" color="black" href='about'>About Us</Button>
+                        {/* <Button aria-label="about us" color="black" href='about'>About Us</Button>
 
-                        <Button aria-label="services" color="black">Services</Button>
+                        <Button aria-label="services" color="black">Services</Button> */}
 
                     </div>
 
