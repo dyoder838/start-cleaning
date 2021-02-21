@@ -8,9 +8,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Nav from '../../components/Nav';
+import CustomStyles from './style.module.css';
 import Footer from '../../components/Footer';
-import SplashText from "../../components/SplashText";
-import "./style.css";
 import Art1Image from '../../assets/gloves.jpg';
 import ArtImage2 from '../../assets/open.jpg';
 import ArtImage3 from '../../assets/pride.jpg';
@@ -18,23 +18,23 @@ import ArtImage3 from '../../assets/pride.jpg';
 const theme = createMuiTheme();
 
 theme.typography.body2 = {
-  fontSize: '2rem',
-  '@media (min-width:600px)': {
     fontSize: '2rem',
-  },
-  [theme.breakpoints.up('md')]: {
-    fontSize: '1.5rem',
-  },
+    '@media (min-width:600px)': {
+        fontSize: '2rem',
+    },
+    [theme.breakpoints.up('md')]: {
+        fontSize: '1.5rem',
+    },
 };
 theme.typography.h5 = {
     fontSize: '2rem',
     '@media (min-width:600px)': {
-      fontSize: '2rem',
+        fontSize: '2rem',
     },
     [theme.breakpoints.up('md')]: {
-      fontSize: '1.5rem',
+        fontSize: '1.5rem',
     },
-  };
+};
 
 const useStyles = makeStyles((theme) => ({
 
@@ -103,7 +103,7 @@ const useStyles = makeStyles((theme) => ({
     button: {
         margin: 'auto'
     },
-   
+
 
 }));
 
@@ -112,15 +112,23 @@ export default function MainPage() {
     const classes = useStyles();
 
     return (
-       
-        <Grid container className={classes.root} spacing={2}>
+
+        <Grid container className={classes.root} >
 
 
             <Grid item xs={12}>
-                <SplashText />
+                <div className={CustomStyles.root}>
+                    <Nav />
+                    <div className={CustomStyles.text}>
+                        <Typography variant="h3">Its time to Start Cleaning</Typography>
+                        <Typography variant="h4">Thorough. Efficient. Clean</Typography>
+                        <Typography variant="h5">Call for a consultation</Typography>
+                        <Typography component="a" color='inherit' variant="h5" href="tel:18883700123">1 (888) 370-0123</Typography>
+                    </div>
+                </div>
             </Grid>
 
-            <Grid container spacing={2} >
+            <Grid container>
 
                 <Grid item xs={12} >
 
@@ -161,9 +169,9 @@ export default function MainPage() {
                                 </Typography>
 
                                 <ThemeProvider theme={theme}>
-                                <Typography variant="body2" color="textSecondary" component="p">
-                                    We offer Commercial and residential cleaning services including:
-                                    Move in and out, Recurring cleaning, and "I need a break" cleaning.
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        We offer Commercial and residential cleaning services including:
+                                        Move in and out, Recurring cleaning, and "I need a break" cleaning.
                                     <br />
                                     follow the link below for more specific details.
                                 </Typography>
@@ -202,10 +210,10 @@ export default function MainPage() {
                                 <Typography gutterBottom variant="h5" component="h2">
                                     Our Hours
                                     </Typography>
-                                
+
                                 <ThemeProvider theme={theme}>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                         Monday - Friday
+                                        Monday - Friday
                                         <br />
                                         8:00 AM - 5:00 PM
                                         <br />
@@ -219,7 +227,7 @@ export default function MainPage() {
 
                         <CardActions>
 
-                            <Button className={classes.button} size="small">
+                            <Button className={classes.button} href='/about' size="small">
                                 About Us
                                 </Button>
 
@@ -248,7 +256,7 @@ export default function MainPage() {
 
                                 <ThemeProvider theme={theme}>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                    We at Start Cleaning pride ourselves on offering quality work at a fair price. since our beginning, our main goal has been to exceed the expectations of every client by cleaning your home or office as if it were our own.
+                                        We at Start Cleaning pride ourselves on offering quality work at a fair price. since our beginning, our main goal has been to exceed the expectations of every client by cleaning your home or office as if it were our own.
                                     <br />
                                     our team of seasoned professionals will clean your home to your exact specifications. for your home, we bring all of our own equipment and eco-friendly cleaning products.
                                     </Typography>
@@ -261,7 +269,7 @@ export default function MainPage() {
 
                         <CardActions>
 
-                            <Button className={classes.button} size="small"  href="tel:+18883700123" >
+                            <Button className={classes.button} size="small" href="tel:+18883700123" >
                                 Call
                             </Button>
 
@@ -277,6 +285,6 @@ export default function MainPage() {
             </Grid>
 
         </Grid>
-        
+
     )
 }

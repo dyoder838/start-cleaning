@@ -106,12 +106,12 @@ export default function PrimarySearchAppBar() {
             onClose={handleMobileMenuClose}
         >
             <MenuItem>
-                <Button aria-label="home" >Home</Button>
+                <Button aria-label="home" href='/' >Home</Button>
 
             </MenuItem>
 
             <MenuItem>
-                <Button aria-label="about us" color="inherit">About Us</Button>
+                <Button aria-label="about us" href='/about' color="inherit">About Us</Button>
 
             </MenuItem>
 
@@ -149,9 +149,9 @@ export default function PrimarySearchAppBar() {
 
                     <div className={classes.sectionDesktop}>
 
-                        <Button aria-label="Home" color="black">Home</Button>
+                        <Button aria-label="Home" color="black" href='/'>Home</Button>
 
-                        <Button aria-label="about us" color="black">About Us</Button>
+                        <Button aria-label="about us" color="black" href='about'>About Us</Button>
 
                         <Button aria-label="services" color="black">Services</Button>
 
