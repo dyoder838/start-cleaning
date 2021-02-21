@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import Nav from '../../components/Nav';
 import CustomStyles from './style.module.css';
 import Footer from '../../components/Footer';
+import ReviewCard from '../../components/ReviewCard'
 import Art1Image from '../../assets/gloves.jpg';
 import ArtImage2 from '../../assets/open.jpg';
 import ArtImage3 from '../../assets/pride.jpg';
@@ -121,7 +122,7 @@ export default function MainPage() {
                     <Nav />
                     <div className={CustomStyles.text}>
                         <Typography variant="h3">Its time to Start Cleaning</Typography>
-                        <Typography variant="h4">Thorough. Efficient. Clean</Typography>
+                        <Typography variant="h4">Thorough. Efficient. Clean.</Typography>
                         <Typography variant="h5">Call for a consultation</Typography>
                         <Typography component="a" color='inherit' variant="h5" href="tel:18883700123">1 (888) 370-0123</Typography>
                     </div>
@@ -134,7 +135,7 @@ export default function MainPage() {
 
                     <div className={classes.articleHeader} >
 
-                        <Typography variant="h4">Serving: King, Snohomish, Skagit, and Kitsap Counties</Typography>
+                        <Typography variant="h4">Serving: King, Snohomish, and Skagit Counties</Typography>
 
                     </div>
 
@@ -278,8 +279,26 @@ export default function MainPage() {
                     </Card>
 
                 </Grid>
-            </Grid>
 
+            </Grid>
+            
+            {/* <Grid container> 
+
+            {ProjectDb.map((card, index) =>
+                <Grid key={index} item xs={12} md={6} lg={6}>
+
+                    <ReviewCard 
+                     key={index}
+                     id={card.id}
+                     title={card.title}
+                     image={card.image}
+                     repository={card.repository}
+                     liveLink={card.liveLink}
+                     description={card.description} />
+
+                </Grid>)}
+
+            </Grid> */}
             <Grid item sm={12}>
                 <Footer />
             </Grid>
