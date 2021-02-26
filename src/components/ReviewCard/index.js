@@ -12,7 +12,7 @@ import { IconContext } from "react-icons";
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
-    minHeight: 345,
+    minHeight: 480,
     maxHeight: 650, 
     background: "rgba(255,255,255, .4)",
     position: "relative",
