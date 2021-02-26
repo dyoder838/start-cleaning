@@ -11,7 +11,7 @@ import { FaYelp } from 'react-icons/fa';
 const useStyles = makeStyles({
   root: {
     width: '100%',
-    backgroundColor: 'transparent',
+    backgroundColor: 'white',
   },
 });
 

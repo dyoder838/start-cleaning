@@ -34,12 +34,13 @@ const useStyles = makeStyles({
     fontSize: 18,
   },
   button: {
+    margin: 7,
+  },
+  icon: {
+    position: 'absolute',
     left: 0, 
     bottom: 0,
-    position: 'absolute',
-    
-  },
-
+  }
 });
 
 export default function SimpleCard(props) {
@@ -71,7 +72,7 @@ export default function SimpleCard(props) {
 
       <CardActions className={classes.button}>
         <IconContext.Provider value={{ color: "red", size: "2em" , title: "Yelp", className: "global-class-name" }}>
-          <BottomNavigationAction showLabel label="Yelp" icon={<FaYelp onClick={event => window.open("https://www.yelp.com/biz/start-cleaning-lynnwood-3", "_blank")}/>} />
+          <BottomNavigationAction className={classes.icon} showLabel label="Yelp" icon={<FaYelp onClick={event => window.open("https://www.yelp.com/biz/start-cleaning-lynnwood-3", "_blank")}/>} />
         </IconContext.Provider>
       </CardActions>
 
