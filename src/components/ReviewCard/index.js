@@ -52,19 +52,19 @@ export default function SimpleCard(props) {
 
       <CardContent>
 
-        <Typography className={classes.name} variant="h5" component="h2">
+        <Typography className={classes.name} variant="h6" component="h2">
           {props.name}
         </Typography>
 
-        <Typography className={classes.stars} variant="h5" component="h2">
+        <Typography className={classes.stars} variant="h6" component="h2">
           {props.stars}
         </Typography>
 
-        <Typography className={classes.title} variant="h5" component="h2">
+        <Typography className={classes.title} variant="h6" component="h2">
           {props.title}
         </Typography>
 
-        <Typography className={classes.review} variant="body2" component="p">
+        <Typography className={classes.review} variant="body1" component="p">
           {props.review}
         </Typography>
 

@@ -45,6 +45,7 @@ const useStyles = makeStyles((theme) => ({
             display: 'none',
             position: 'absolute',
             right: '0px',
+            
         },
     },
     sectionDesktop: {
@@ -110,7 +111,7 @@ export default function PrimarySearchAppBar() {
 
             </MenuItem>
 
-            <MenuItem>
+            {/* <MenuItem>
                 <Button aria-label="about us" href='/about' color="inherit">About Us</Button>
 
             </MenuItem>
@@ -118,7 +119,7 @@ export default function PrimarySearchAppBar() {
             <MenuItem>
                 <Button aria-label="services" color="inherit">Services</Button>
 
-            </MenuItem>
+            </MenuItem> */}
 
         </Menu>
     );
@@ -139,7 +140,6 @@ export default function PrimarySearchAppBar() {
                     <IconButton
                         edge="start"
                         className={classes.sectionMobile}
-                        color="black"
                         aria-label="open drawer" aria-controls={mobileMenuId}
                         aria-haspopup="true"
                         onClick={handleMobileMenuOpen}
@@ -149,11 +149,11 @@ export default function PrimarySearchAppBar() {
 
                     <div className={classes.sectionDesktop}>
 
-                        <Button aria-label="Home" color="black" href='/'>Home</Button>
+                        <Button aria-label="Home" href='/'>Home</Button>
 
-                        <Button aria-label="about us" color="black" href='about'>About Us</Button>
+                        {/* <Button aria-label="about us" color="black" href='about'>About Us</Button>
 
-                        <Button aria-label="services" color="black">Services</Button>
+                        <Button aria-label="services" color="black">Services</Button> */}
 
                     </div>
 
