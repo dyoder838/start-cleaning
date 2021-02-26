@@ -30,11 +30,14 @@ theme.typography.body2 = {
 };
 theme.typography.h5 = {
     fontSize: '2rem',
+    fontWeight: "bold",
     '@media (min-width:600px)': {
         fontSize: '2rem',
+        fontWeight: "bold",
     },
     [theme.breakpoints.up('md')]: {
-        fontSize: '1.5rem',
+        fontSize: '2rem',
+        fontWeight: "bold",
     },
 };
 
@@ -49,6 +52,8 @@ const useStyles = makeStyles((theme) => ({
         margin: 'auto',
         textAlign: 'center',
         padding: '8px',
+        backgroundColor: 'rgba(0, 0, 0, 0.6)',
+        color: 'white',
     },
     covidContainer: {
         backgroundColor: 'rgba(76, 175, 80, 0.6)',
@@ -102,8 +107,17 @@ const useStyles = makeStyles((theme) => ({
         margin: "auto",
         top: "0",
     },
+    yelp: {
+        margin: 'auto',
+        textAlign: 'center',
+        padding: '8px',
+        backgroundColor: 'rgba(0, 0, 0, 0.6)',
+        color: 'white',
+
+    },
     button: {
-        margin: 'auto'
+        margin: 'auto',
+        fontWeight: 'bold',
     },
 
 
@@ -122,9 +136,9 @@ export default function MainPage() {
                 <div className={CustomStyles.root}>
                     <Nav />
                     <div className={CustomStyles.text}>
-                        <Typography variant="h3">Its time to Start Cleaning</Typography>
+                        <Typography variant="h3">It's Time To Start Cleaning</Typography>
                         <Typography variant="h4">Thorough. Efficient. Clean.</Typography>
-                        <Typography variant="h5">Call for a consultation</Typography>
+                        <Typography variant="h5">Call for a Consultation</Typography>
                         <Typography component="a" color='inherit' variant="h5" href="tel:18883700123">1 (888) 370-0123</Typography>
                     </div>
                 </div>
@@ -185,9 +199,9 @@ export default function MainPage() {
 
                         <CardActions>
 
-                            <Button className={classes.button} size="small">
+                            {/* <Button className={classes.button} size="small">
                                 Services
-                                </Button>
+                            </Button> */}
 
                         </CardActions>
 
@@ -229,9 +243,9 @@ export default function MainPage() {
 
                         <CardActions>
 
-                            <Button className={classes.button} href='/about' size="small">
+                            {/* <Button className={classes.button} href='/about' size="small">
                                 About Us
-                                </Button>
+                            </Button> */}
 
                         </CardActions>
 
@@ -278,6 +292,16 @@ export default function MainPage() {
                         </CardActions>
 
                     </Card>
+
+                </Grid>
+
+                <Grid item xs={12} >
+
+                    <div className={classes.yelp} >
+
+                        <Typography variant="h4">See What Our Customers Have To Say</Typography>
+
+                    </div>
 
                 </Grid>
 
