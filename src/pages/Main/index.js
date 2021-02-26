@@ -15,6 +15,7 @@ import ReviewCard from '../../components/ReviewCard'
 import Art1Image from '../../assets/gloves.jpg';
 import ArtImage2 from '../../assets/open.jpg';
 import ArtImage3 from '../../assets/pride.jpg';
+import YelpDB from '../../YelpDB.json';
 
 const theme = createMuiTheme();
 
@@ -282,23 +283,23 @@ export default function MainPage() {
 
             </Grid>
             
-            {/* <Grid container> 
+            <Grid container justify="space-evenly" direction="row" alignItems="center"> 
 
-            {ProjectDb.map((card, index) =>
+            {YelpDB.map((card, index) =>
                 <Grid key={index} item xs={12} md={6} lg={6}>
 
                     <ReviewCard 
                      key={index}
                      id={card.id}
                      title={card.title}
-                     image={card.image}
-                     repository={card.repository}
-                     liveLink={card.liveLink}
-                     description={card.description} />
+                     review={card.review}
+                     stars={card.stars}
+                     name={card.name}
+                     link={card.link} />
 
                 </Grid>)}
 
-            </Grid> */}
+            </Grid>
             <Grid item sm={12}>
                 <Footer />
             </Grid>
