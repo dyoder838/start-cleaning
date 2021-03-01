@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "title": "Kitchen",
+        "regservice": ["Clean the exterior of major appliances", "Clean counter tops", "Clean exterior of cupboards", "Clean floors (sweep, mop, Vacuum)", "Clean sinks and faucets"],
+        "deepservice": ["Cleaning interior of major appliances", "Interior cupboard cleaning (dust, surface clean)", "Trash and Recycling removal", "Stainless steel surface deep clean", "Glass top stove surface cleaning"]
+    },
+    {
+        "id": 2, 
+        "title": "Living / Family / Dining Room", 
+        "regservice": ["Dusting", "Washing interior windows", "Vacuum / Sweep / Mop", "Wipe down furniture"],
+        "deepservice": ["Sanitize door knobs and light switches", "Clean under couch cushions", " Polish tables"]
+    }, 
+    {
+        "id": 3, 
+        "title": "Bedrooms", 
+        "regservice": ["Dusting horizontal surfaces", "Dusting decor and appliances", "Cleaning mirrors", "Cleaning Floors (vacuum / sweep / mop)" ],
+        "deepservice": ["Sanitize door knobs and light switches", "Clean under couch cushions", " Polish bedroom furniture", "Make beds"]
+    },
+    {
+        "id": 4, 
+        "title": "Bathrooms", 
+        "regservice": ["Dusting horizontal surfaces", "Cleaning mirrors", "Cleaning counters and sinks", "Cleaning tubs and showers (and shower doors / curtains)","Cleaning Floors and bathmats (vacuum / sweep / mop)", "Cleaning toilets (in, around, and behind)", "Folding and placing linens"],
+        "deepservice": ["Sanitize door knobs and light switches", "Polish chrome and metal surfaces", "Scrubbing walls for watermarks"]
+    }, 
+    {
+        "id": 5, 
+        "title": "Move In / Out", 
+        "regservice": ["Dusting horizontal surfaces","Cleaning Floors (vacuum / sweep / mop)", "Cleaning appliances", "Cleaning cupboards"],
+        "deepservice": ["We may be able to accommodate extra services required by your lease"]
+    }
+    
+]
