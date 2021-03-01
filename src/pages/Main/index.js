@@ -199,9 +199,9 @@ export default function MainPage() {
 
                         <CardActions>
 
-                            {/* <Button className={classes.button} size="small">
+                            <Button className={classes.button} href='/services' size="small" >
                                 Services
-                            </Button> */}
+                            </Button>
 
                         </CardActions>
 
