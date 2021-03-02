@@ -5,6 +5,7 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,6 +36,16 @@ const useStyles = makeStyles((theme) => ({
   deepservice:{
     fontSize: 18,
     fontWeight: "bold",
+  },
+  buttonbox: {
+    background: 'green',
+    position: 'relative',
+    height: 40, 
+  },
+  button: {
+    background: 'red',
+    position: 'absolute',
+    
   }
 }));
 
@@ -68,7 +79,11 @@ export default function SimpleAccordion(props) {
               <li>{dservice}</li>
               )}
             </ul>
+            <div className={classes.buttonbox}>
+              <Button className={classes.button} size="small" href="tel:+18883700123" >Call</Button>
+            </div>
             </Typography>
+           
         </AccordionDetails>
       </Accordion>
     </div>
