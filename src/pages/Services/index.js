@@ -4,15 +4,17 @@ import { makeStyles } from '@material-ui/core/styles';
 import CustomStyles from './style.module.css';
 import Typography from '@material-ui/core/Typography';
 import Nav from '../../components/Nav';
-import Accordion from '../../components/Accordion'
-import AccordionDb from "../../Accordion.json"
+import Accordion from '../../components/Accordion';
+import Footer from '../../components/Footer';
+import AccordionDb from '../../Accordion.json';
+
 
 const useStyles = makeStyles((theme) => ({
 
     root: {
-        direction: "row",
-        justify: "center",
-        alignItems: "center",
+        direction: 'row',
+        justify: 'center',
+        alignItems: 'center',
     },
     header: {
         textAlign: 'center',
@@ -76,6 +78,10 @@ export default function MainPage() {
                     deepservice={acc.deepservice}
                 />
             </Grid>)}
+
+            <Grid item xs={12}>
+                <Footer />
+            </Grid>
 
         </Grid>
 
