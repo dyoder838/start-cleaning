@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
   },
+  accordionicon: {
+    position: 'absolute'
+  },
   heading: {
     fontSize: theme.typography.pxToRem(30),
     fontWeight: theme.typography.fontWeightBold,
@@ -42,7 +45,8 @@ export default function SimpleAccordion(props) {
     <div className={classes.root}>
       <Accordion>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          
+          expandIcon={<ExpandMoreIcon className={classes.accordionicon} />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
