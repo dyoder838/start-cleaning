@@ -37,15 +37,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 18,
     fontWeight: "bold",
   },
-  buttonbox: {
-    background: 'green',
-    position: 'relative',
-    height: 40, 
-  },
   button: {
-    background: 'red',
-    position: 'absolute',
-    
+    fontWeight: 'bold',
+    backgroundColor: '#e5e8eb',
   }
 }));
 
@@ -79,9 +73,9 @@ export default function SimpleAccordion(props) {
               <li>{dservice}</li>
               )}
             </ul>
-            <div className={classes.buttonbox}>
-              <Button className={classes.button} size="small" href="tel:+18883700123" >Call</Button>
-            </div>
+           
+              <Button className={classes.button} size="large" href="tel:+18883700123" >Call for a Consultation</Button>
+          
             </Typography>
            
         </AccordionDetails>
