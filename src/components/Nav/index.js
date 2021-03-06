@@ -7,7 +7,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
 import Button from '@material-ui/core/Button';
-import Logo from '../../assets/SCLogo.png'
+import Logo from '../../assets/SCLogo.png';
 
 const useStyles = makeStyles((theme) => ({
     grow: {
@@ -56,44 +56,24 @@ const useStyles = makeStyles((theme) => ({
             right: '0px',
         },
     },
+    button: {
+        fontWeight: 'bold'
+    }
 }));
 
 export default function PrimarySearchAppBar() {
     const classes = useStyles();
-    const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
-    const isMenuOpen = Boolean(anchorEl);
+    
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
     const handleMobileMenuClose = () => {
         setMobileMoreAnchorEl(null);
     };
 
-    const handleMenuClose = () => {
-        setAnchorEl(null);
-        handleMobileMenuClose();
-    };
-
     const handleMobileMenuOpen = (event) => {
         setMobileMoreAnchorEl(event.currentTarget);
     };
-
-    const menuId = 'primary-search-account-menu';
-    const renderMenu = (
-        <Menu
-            anchorEl={anchorEl}
-            anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-            id={menuId}
-            keepMounted
-            transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-            open={isMenuOpen}
-            onClose={handleMenuClose}
-        >
-            <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-            <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-        </Menu>
-    );
 
     const mobileMenuId = 'primary-search-account-menu-mobile';
     const renderMobileMenu = (
@@ -105,6 +85,7 @@ export default function PrimarySearchAppBar() {
             transformOrigin={{ vertical: 'top', horizontal: 'right' }}
             open={isMobileMenuOpen}
             onClose={handleMobileMenuClose}
+            
         >
             <MenuItem>
                 <Button aria-label="home" href='/' >Home</Button>
@@ -116,7 +97,8 @@ export default function PrimarySearchAppBar() {
 
             </MenuItem> */}
 
-            <MenuItem>
+            <MenuItem
+            >
                 <Button aria-label="services" href='/services'>Services</Button>
 
             </MenuItem>
@@ -149,11 +131,12 @@ export default function PrimarySearchAppBar() {
 
                     <div className={classes.sectionDesktop}>
 
-                        <Button aria-label="Home" href='/'>Home</Button>
+                        <Button className={classes.button} aria-label="Home" size='large' href='/'>Home</Button>
 
-                        {/* <Button aria-label="about us" href='/about'>About Us</Button> */}
+                        {/* <Button className={classes.button} aria-label="about us" href='/about'>About Us</Button> */}
 
-                        <Button aria-label="services" href='/services'>Services</Button>
+                        <Button className={classes.button} aria-label="services" size='large' href='/services'>Services</Button>
+                        
 
                     </div>
 
@@ -161,7 +144,6 @@ export default function PrimarySearchAppBar() {
 
             </AppBar>
             {renderMobileMenu}
-            {renderMenu}
         </div>
     );
 }
