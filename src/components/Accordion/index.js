@@ -72,7 +72,7 @@ export default function SimpleAccordion(props) {
               )}
             </ul>
          
-            <Typography className={classes.servicelevel} >Standard Services</Typography>
+            <Typography className={classes.servicelevel} >Extra Services</Typography>
             <ul className={classes.deepservice}>
               {props.deepservice.map ((dservice, index) => 
               <li key={index} >{dservice}</li>
