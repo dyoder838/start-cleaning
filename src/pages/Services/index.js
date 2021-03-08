@@ -4,9 +4,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import CustomStyles from './style.module.css';
 import Typography from '@material-ui/core/Typography';
 import Nav from '../../components/Nav';
-import Accordion from '../../components/Accordion';
+import Accordion from '../../components/Accordion2';
 import Footer from '../../components/Footer';
-import AccordionDb from '../../Accordion.json';
+import AccordionDb from '../../Accordion2.json';
 
 
 
@@ -69,14 +69,14 @@ export default function MainPage() {
 
             </Grid>
 
-            {AccordionDb.map((acc, index) =>
+            {AccordionDb.map((data, index) =>
             <Grid item xs={12} key={index}>
                 <Accordion 
                     key={index}
-                    id={acc.id}
-                    title={acc.title}
-                    regservice={acc.regservice}
-                    deepservice={acc.deepservice}
+                    id={data.id}
+                    title={data.title}
+                    rooms={data.rooms.title}
+                    services={data.rooms.services}
                 />
             </Grid>)}
 
