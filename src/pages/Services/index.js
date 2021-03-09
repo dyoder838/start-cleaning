@@ -74,9 +74,9 @@ export default function MainPage() {
                 <Accordion 
                     key={index}
                     id={data.id}
-                    title={data.title}
-                    rooms={data.rooms.title}
-                    services={data.rooms.services}
+                    accordiontitle={data.title}
+                    roomsarr={data.rooms}
+                
                 />
             </Grid>)}
 

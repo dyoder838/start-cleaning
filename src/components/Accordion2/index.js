@@ -54,27 +54,29 @@ export default function SimpleAccordion(props) {
   return (
     <div className={classes.root}>
       <Accordion>
+
         <AccordionSummary
           
           expandIcon={<ExpandMoreIcon className={classes.accordionicon} />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={classes.heading}>{props.title}</Typography>
+
+          <Typography className={classes.heading}>{props.accordiontitle}</Typography>
+
         </AccordionSummary>
-        <AccordionDetails>
+        {props.roomsarr.map((data, index) => 
+        <AccordionDetails key={index} title={data.title} services={data.services}>
+
           <Typography component='div' className={classes.accordionservices}>
       
-          {/* the Accordion needs to map another sub component */}
-            <Typography className={classes.servicelevel} >{props.rooms} </Typography>
-
-          {/* map this for services */}
+            <Typography className={classes.servicelevel} > {data.title} </Typography>
       
             <ul>
-
-              <li>
-              {props.services}
-             </li>
+                {data.services.map((data2, index2) =>
+                <li >
+                {data2.services}
+                </li>)}
 
             </ul>
           
@@ -82,7 +84,8 @@ export default function SimpleAccordion(props) {
           
             </Typography>
            
-        </AccordionDetails>
+        </AccordionDetails>)}
+
       </Accordion>
     </div>
   );
