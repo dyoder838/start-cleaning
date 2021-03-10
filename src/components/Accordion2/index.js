@@ -19,8 +19,8 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: theme.typography.fontWeightBold,
     margin: 'auto'
   },
-  title: {
-    fontSize: 30,
+  roomtitle: {
+    fontSize: 25,
     fontWeight: "bold",
   },
   accordionservices: {
@@ -28,17 +28,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       maxWidth: '25%',
     },
-},
-  servicelevel: {
-    fontSize: 20,
-    fontWeight: "bold",
-    lineHeight: 2,
   },
-  regservice: {
-    fontSize: 18,
-    fontWeight: "bold",
-  },
-  deepservice:{
+  service: {
     fontSize: 18,
     fontWeight: "bold",
   },
@@ -65,17 +56,18 @@ export default function SimpleAccordion(props) {
           <Typography className={classes.heading}>{props.accordiontitle}</Typography>
 
         </AccordionSummary>
+
         {props.roomsarr.map((data, index) => 
         <AccordionDetails key={index} title={data.title} services={data.services}>
 
           <Typography component='div' className={classes.accordionservices}>
       
-            <Typography className={classes.servicelevel} > {data.title} </Typography>
+            <Typography className={classes.roomtitle} > {data.title} </Typography>
       
             <ul>
                 {data.services.map((data2, index2) =>
-                <li >
-                {data2.services}
+                <li className={classes.service} key={index2}>
+                {data2}
                 </li>)}
 
             </ul>

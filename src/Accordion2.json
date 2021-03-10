@@ -48,6 +48,153 @@
                     ]
                 }
             ]
+    },
+    {
+        "id": 1, 
+        "title": "Deep Cleaning",
+        "rooms": 
+            [
+                {
+                    "id": 0,
+                    "title": "Kitchen",
+                    "services": [
+                        "Dusting horizontal surfaces, décor and appliances",
+                        "Cleaning the Exterior of major appliances (Microwave, Refrigerator, Oven)",
+                        "Cleaning exterior of cabinets",
+                        "Cleaning counter tops",
+                        "Cleaning sinks and faucets",
+                        "Cleaning floors (Vacuum / Sweep / Mop)"
+                    ]
+                }, 
+                {
+                    "id": 1,
+                    "title": "Living/Family/Dining Room",
+                    "services":[
+                        "Dusting horizontal surfaces and décor",
+                        "Cleaning furniture surfaces (dust / vacuum)",
+                        "Cleaning floors (Vacuum / Sweep / Mop)"
+                    ]
+                },
+                {
+                    "id": 2, 
+                    "title": "Bathrooms",
+                    "services": [
+                        "Dusting horizontal surfaces and counter tops",
+                        "Cleaning mirrors and sinks",
+                        "Cleaning tubs and showers (including shower doors)",
+                        "Cleaning toilets (in, around, and behind)",
+                        "Cleaning floors and bathmats (Vacuum / Sweep / Mop)"
+                    ]
+                }, 
+                {
+                    "id": 3,
+                    "title": "Bedrooms",
+                    "services": [
+                        "Dusting horizontal surfaces",
+                        "Dusting decor and appliances",
+                        "Cleaning mirrors",
+                        "Cleaning Floors (Vacuum / Sweep / Mop)"
+                    ]
+                }
+            ]
+    },
+    {
+        "id": 1, 
+        "title": "Move In / Move Out",
+        "rooms": 
+            [
+                {
+                    "id": 0,
+                    "title": "Kitchen",
+                    "services": [
+                        "Dusting horizontal surfaces, décor and appliances",
+                        "Cleaning the Exterior of major appliances (Microwave, Refrigerator, Oven)",
+                        "Cleaning exterior of cabinets",
+                        "Cleaning counter tops",
+                        "Cleaning sinks and faucets",
+                        "Cleaning floors (Vacuum / Sweep / Mop)"
+                    ]
+                }, 
+                {
+                    "id": 1,
+                    "title": "Living/Family/Dining Room",
+                    "services":[
+                        "Dusting horizontal surfaces and décor",
+                        "Cleaning furniture surfaces (dust / vacuum)",
+                        "Cleaning floors (Vacuum / Sweep / Mop)"
+                    ]
+                },
+                {
+                    "id": 2, 
+                    "title": "Bathrooms",
+                    "services": [
+                        "Dusting horizontal surfaces and counter tops",
+                        "Cleaning mirrors and sinks",
+                        "Cleaning tubs and showers (including shower doors)",
+                        "Cleaning toilets (in, around, and behind)",
+                        "Cleaning floors and bathmats (Vacuum / Sweep / Mop)"
+                    ]
+                }, 
+                {
+                    "id": 3,
+                    "title": "Bedrooms",
+                    "services": [
+                        "Dusting horizontal surfaces",
+                        "Dusting decor and appliances",
+                        "Cleaning mirrors",
+                        "Cleaning Floors (Vacuum / Sweep / Mop)"
+                    ]
+                }
+            ]
+    },
+    {
+        "id": 1, 
+        "title": "Extra Services",
+        "rooms": 
+            [
+                {
+                    "id": 0,
+                    "title": "Kitchen",
+                    "services": [
+                        "Dusting horizontal surfaces, décor and appliances",
+                        "Cleaning the Exterior of major appliances (Microwave, Refrigerator, Oven)",
+                        "Cleaning exterior of cabinets",
+                        "Cleaning counter tops",
+                        "Cleaning sinks and faucets",
+                        "Cleaning floors (Vacuum / Sweep / Mop)"
+                    ]
+                }, 
+                {
+                    "id": 1,
+                    "title": "Living/Family/Dining Room",
+                    "services":[
+                        "Dusting horizontal surfaces and décor",
+                        "Cleaning furniture surfaces (dust / vacuum)",
+                        "Cleaning floors (Vacuum / Sweep / Mop)"
+                    ]
+                },
+                {
+                    "id": 2, 
+                    "title": "Bathrooms",
+                    "services": [
+                        "Dusting horizontal surfaces and counter tops",
+                        "Cleaning mirrors and sinks",
+                        "Cleaning tubs and showers (including shower doors)",
+                        "Cleaning toilets (in, around, and behind)",
+                        "Cleaning floors and bathmats (Vacuum / Sweep / Mop)"
+                    ]
+                }, 
+                {
+                    "id": 3,
+                    "title": "Bedrooms",
+                    "services": [
+                        "Dusting horizontal surfaces",
+                        "Dusting decor and appliances",
+                        "Cleaning mirrors",
+                        "Cleaning Floors (Vacuum / Sweep / Mop)"
+                    ]
+                }
+            ]
     }
 ]
    
