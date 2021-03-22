@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
   },
-  accordionicon: {
+  accordionIcon: {
     position: 'absolute'
   },
   heading: {
@@ -19,14 +19,18 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: theme.typography.fontWeightBold,
     margin: 'auto'
   },
-  roomtitle: {
+  roomTitle: {
     fontSize: 25,
     fontWeight: "bold",
   },
-  accordionservices: {
-    margin: 'auto', 
-    [theme.breakpoints.up('md')]: {
-      maxWidth: '25%',
+  accordionServices: {
+    textAlign: 'left',
+    margin: 'auto',
+    [theme.breakpoints.only('md')]: {
+      width: '25%',
+    },
+    [theme.breakpoints.up('lg')]: {
+      width: '40%',
     },
   },
   service: {
@@ -48,7 +52,7 @@ export default function SimpleAccordion(props) {
 
         <AccordionSummary
           
-          expandIcon={<ExpandMoreIcon className={classes.accordionicon} />}
+          expandIcon={<ExpandMoreIcon className={classes.accordionIcon} />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
@@ -60,9 +64,9 @@ export default function SimpleAccordion(props) {
         {props.roomsarr.map((data, index) => 
         <AccordionDetails key={index} title={data.title} services={data.services}>
 
-          <Typography component='div' className={classes.accordionservices}>
+          <Typography component='div' className={classes.accordionServices}>
       
-            <Typography className={classes.roomtitle} > {data.title} </Typography>
+            <Typography className={classes.roomTitle} > {data.title} </Typography>
       
             <ul>
                 {data.services.map((data2, index2) =>
