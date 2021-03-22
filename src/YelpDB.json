@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "title": "'It's like coming home to a hotel.'",
+        "review": "'I've been very pleased with Start Cleaning so much so that I've changed my bi-weekly to weekly.  I love that they not only will do an incredible job cleaning it also offer services for laundry.  Big win! This isn't your typical cleaner either.  There are special touches such as how blankets and pillows are displayed, or tissue or toilet paper.  It's like coming home to a hotel.  Clean, fresh, and looking incredible.bI highly recommend Daiane and her staff!'",
+        "stars": "5 Stars 4/24/2019",
+        "name": "Ben J",
+        "link": "https://www.yelp.com/biz/start-cleaning-lynnwood-3"
+    },
+    {
+        "id": 2,
+        "title": "'...this company made it an incredible experience!!'",
+        "review": "'This was my first time hiring anyone to clean my house and this company made it an incredible experience!! The gentleman who cleaned our house was very kind and worked so incredibly hard for the entire three and a half hours it took. He truly went above and beyond. Can't say enough good things!!'",
+        "stars": "5 Stars 7/10/2019",
+        "name": "Julia S",
+        "link": "https://www.yelp.com/biz/start-cleaning-lynnwood-3"
+    },
+    {
+        "id": 3,
+        "title": "'Great service and price for people who consider regular cleaning.'",
+        "review": "'Daiane and her team did a great job for doing deep cleaning. I feel very comfortable in a super clean house now :) besides, the price is very affordable! Great service and price for people who consider regular cleaning.'",
+        "stars": "5 Stars 9/1/2019",
+        "name": "Xu P",
+        "link": "https://www.yelp.com/biz/start-cleaning-lynnwood-3"
+    },
+    {
+        "id": 4,
+        "title": "'It's even cleaner than when I first moved in'",
+        "review": "'After a few mediocre house cleaners in the past, I went on yelp for help. I chose Start Cleaning since they responded back with the most reasonable price. Thank you so much Daiane for the amazing cleaning job. It's even cleaner than when I first moved in. I'm very OCD so every item has its place and a certain way the label faces. It's the first time that everything was moved and wiped down. I live in a town house with a gate and a few steps leading down to the front door. She even cleaned my outside entry way. My front door is spotless compared to my neighbors. I highly recommend her and will continue my monthly services.'",
+        "stars": "5 Stars 6/20/2019",
+        "name": "Mary M",
+        "link": "https://www.yelp.com/biz/start-cleaning-lynnwood-3"
+    },
+    {
+        "id": 5,
+        "title": "'...really go above and beyond with their services'",
+        "review": "'The ladies from Start Cleaning have done a fantastic job and really go above and beyond with their services. We have used them for apartment move out cleaning, post remodeling cleaning, and just a good thorough whole house cleaning. They delivered each time, from offering to clean our sliding windows to small touches to make the bathroom 'guest ready' for family visits. At the price and with the overall great experience, I will likely have them come in at a more regular cadence. TLDR: 10/10. If you need help with cleaning and organizing, message them.'",
+        "stars": "5 Stars 11/18/2020",
+        "name": "Sabina C",
+        "link": "https://www.yelp.com/biz/start-cleaning-lynnwood-3"
+    }
+]
+

@@ -1,24 +1,14 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { makeStyles } from '@material-ui/core/styles';
-import MainPage from "./pages/Main";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import MainPage from './pages/Main';
+// import About from './pages/About';
+import Services from '../src/pages/Services'
 
-const useStyles = makeStyles((theme) => ({
-
-    root: {
-        flexGrow: 1,
-
-    },
-    navBar: {
-        zIndex: 1,
-    },
-
-}));
 
 
 function App() {
 
-    const classes = useStyles();
+    
 
     return (
 
@@ -26,8 +16,9 @@ function App() {
 
             <Switch>
 
-                <Route exact path="/" component={MainPage}>
-                </Route>
+                <Route exact path="/" component={MainPage}></Route>
+                {/* <Route exact path="/about" component={About}></Route> */}
+                <Route exact path="/services" component={Services}></Route>
 
             
             </Switch>
