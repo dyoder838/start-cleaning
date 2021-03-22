@@ -1,0 +1,178 @@
+[
+
+    {
+        "id": 0, 
+        "title": "Standard Services",
+        "rooms": 
+            [
+                {
+                    "id": 0,
+                    "title": "Kitchen",
+                    "services": [
+                        "Dusting horizontal surfaces, décor and appliances",
+                        "Cleaning the Exterior of major appliances (Microwave, Refrigerator, Oven)",
+                        "Cleaning exterior of cabinets",
+                        "Cleaning counter tops",
+                        "Cleaning sinks and faucets",
+                        "Cleaning floors (Vacuum / Sweep / Mop)"
+                    ]
+                }, 
+                {
+                    "id": 1,
+                    "title": "Living/Family/Dining Room",
+                    "services":[
+                        "Dusting horizontal surfaces and décor",
+                        "Cleaning furniture surfaces (dust / vacuum)",
+                        "Cleaning floors (Vacuum / Sweep / Mop)"
+                    ]
+                },
+                {
+                    "id": 2, 
+                    "title": "Bathrooms",
+                    "services": [
+                        "Dusting horizontal surfaces and counter tops",
+                        "Cleaning mirrors and sinks",
+                        "Cleaning tubs and showers (including shower doors)",
+                        "Cleaning toilets (in, around, and behind)",
+                        "Cleaning floors and bathmats (Vacuum / Sweep / Mop)"
+                    ]
+                }, 
+                {
+                    "id": 3,
+                    "title": "Bedrooms",
+                    "services": [
+                        "Dusting horizontal surfaces",
+                        "Dusting decor and appliances",
+                        "Cleaning mirrors",
+                        "Cleaning Floors (Vacuum / Sweep / Mop)"
+                    ]
+                }
+            ]
+    },
+    {
+        "id": 1, 
+        "title": "Deep Cleaning",
+        "rooms": 
+            [
+                {
+                    "id": 0,
+                    "title": "Kitchen",
+                    "services": [
+                        "Deep cleaning stainless steel surfaces", 
+                        "Deep Cleaning Glass Top stove surface"
+                    ]
+                }, 
+                {
+                    "id": 1,
+                    "title": "Living/Family/Dining Room",
+                    "services":[
+                        "Sanitizing door knobs and light switches",  
+                        "Cleaning under sofa cushions"
+                    ]
+                },
+                {
+                    "id": 2, 
+                    "title": "Bathrooms",
+                    "services": [
+                        "Sanitizing door knobs and light switches"
+                    ]
+                }, 
+                {
+                    "id": 3,
+                    "title": "Bedrooms",
+                    "services": [
+                        "Sanitizing door knobs and light switches",
+                        "Cleaning under sofa cushions"
+                    ]
+                }
+            ]
+    },
+    {
+        "id": 1, 
+        "title": "Move In / Move Out",
+        "rooms": 
+            [
+                {
+                    "id": 0,
+                    "title": "Kitchen",
+                    "services": [
+                        "Dusting horizontal surfaces, décor and appliances",
+                        "Cleaning the Exterior of major appliances (Microwave, Refrigerator, Oven)",
+                        "Cleaning exterior of cabinets",
+                        "Cleaning counter tops",
+                        "Cleaning sinks and faucets",
+                        "Cleaning floors (Vacuum / Sweep / Mop)"
+                    ]
+                }, 
+                {
+                    "id": 1,
+                    "title": "Living/Family/Dining Room",
+                    "services":[
+                        "Dusting horizontal surfaces and décor",
+                        "Cleaning floors (Vacuum / Sweep / Mop)"
+                    ]
+                },
+                {
+                    "id": 2, 
+                    "title": "Bathrooms",
+                    "services": [ 
+                        "Dusting horizontal surfaces and counter tops",
+                        "Cleaning mirrors and sinks",
+                        "Cleaning tubs and showers (including shower doors)",
+                        "Cleaning toilets (in, around, and behind)",
+                        "Cleaning floors and bathmats (Vacuum / Sweep / Mop)"
+                    ]
+                }, 
+                {
+                    "id": 3,
+                    "title": "Bedrooms",
+                    "services": [
+                        "Dusting horizontal surfaces",
+                        "Cleaning Floors (Vacuum / Sweep / Mop)"
+                    ]
+                }
+            ]
+    },
+    {
+        "id": 1, 
+        "title": "Extra Services",
+        "rooms": 
+            [
+                {
+                    "id": 0,
+                    "title": "Kitchen",
+                    "services": [
+                        "Cleaning the interior of major appliances (Microwave, Refrigerator, Oven)", 
+                        "Trash and Recycling removal"
+                    ]
+                }, 
+                {
+                    "id": 1,
+                    "title": "Living/Family/Dining Room",
+                    "services":[
+                        "Washing interior windows",
+                        "Polishing tables"
+                    ]
+                },
+                {
+                    "id": 2, 
+                    "title": "Bathrooms",
+                    "services": [
+                        "Polishing chrome and metal surfaces", 
+                        "Polishing / Scrubbing walls for watermarks", 
+                        "Washing internal windows"
+                    ]
+                }, 
+                {
+                    "id": 3,
+                    "title": "Bedrooms",
+                    "services": [
+                        "Polishing bedroom furniture", 
+                        "Making beds", 
+                        "Washing interior windows"
+                    ]
+                }
+            ]
+    }
+]
+   
