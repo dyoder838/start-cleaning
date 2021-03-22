@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "title": "Kitchen",
+        "regservice": ["Cleaning the Exterior of major appliances (Microwave, Refrigerator, Oven)", "Cleaning counter tops", "Cleaning exterior of cabinets", "Cleaning floors (sweep, mop, Vacuum)", "Cleaning sinks and faucets"],
+        "deepservice": ["Cleaning the Interior of major appliances (Microwave, Refrigerator, Oven)", "Trash and Recycling removal", "Deep cleaning stainless steel surfaces", "Deep Cleaning Glass Top stove surface"]
+    },
+    {
+        "id": 2, 
+        "title": "Living / Family / Dining Room", 
+        "regservice": ["Dusting horizontal surfaces and decor", "Cleaning Floors (Vacuum / Sweep / Mop)", "Cleaning furniture surfaces (dust / vacuum)"],
+        "deepservice": ["Sanitizing door knobs and light switches", "Washing interior windows", "Cleaning under sofa cushions", "Polishing tables"]
+    }, 
+    {
+        "id": 3, 
+        "title": "Bedrooms", 
+        "regservice": ["Dusting horizontal surfaces", "Dusting decor and appliances", "Cleaning mirrors", "Cleaning Floors (Vacuum / Sweep / Mop)" ],
+        "deepservice": ["Sanitizing door knobs and light switches", "Cleaning under sofa cushions", " Polishing bedroom furniture", "Making beds", "Washing interior windows"]
+    },
+    {
+        "id": 4, 
+        "title": "Bathrooms", 
+        "regservice": ["Dusting horizontal surfaces and counter tops", "Cleaning mirrors and sinks", "Cleaning tubs and showers (and shower doors)","Cleaning Floors and bathmats (Vacuum / Sweep / Mop)", "Cleaning toilets (in, around, and behind)"],
+        "deepservice": ["Sanitizing door knobs and light switches", "Polishing chrome and metal surfaces", "Polishing / Scrubbing walls for watermarks", "Washing internal windows"]
+    }, 
+    {
+        "id": 5, 
+        "title": "Move In / Out", 
+        "regservice": ["Dusting horizontal surfaces", "Cleaning Floors (vacuum / sweep / mop)", "Cleaning the Exterior and Interior of major appliances (Microwave, Refrigerator, Oven)", "Cleaning cabinets"],
+        "deepservice": ["We are able to accommodate extra services per request"]
+    }
+    
+]
