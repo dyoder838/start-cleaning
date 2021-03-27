@@ -140,6 +140,8 @@ export default function MainPage() {
                         <Typography variant="h4">Thorough. Efficient. Clean.</Typography>
                         <Typography variant="h5">Call for a Consultation</Typography>
                         <Typography component="a" color='inherit' variant="h5" href="tel:18883700123">1 (888) 370-0123</Typography>
+                        <Typography variant="h5">Or Text Us At</Typography>
+                        <Typography component="a" color='inherit' variant="h5" href="sms:+14255510181">1 (425) 551-0181</Typography>
                     </div>
                 </div>
             </Grid>
