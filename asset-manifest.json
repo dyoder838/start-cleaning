@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/start-cleaning/static/css/main.507ec98c.chunk.css",
-    "main.js": "/start-cleaning/static/js/main.bac90948.chunk.js",
-    "main.js.map": "/start-cleaning/static/js/main.bac90948.chunk.js.map",
-    "runtime-main.js": "/start-cleaning/static/js/runtime-main.57f1952e.js",
-    "runtime-main.js.map": "/start-cleaning/static/js/runtime-main.57f1952e.js.map",
-    "static/js/2.7abb16ed.chunk.js": "/start-cleaning/static/js/2.7abb16ed.chunk.js",
-    "static/js/2.7abb16ed.chunk.js.map": "/start-cleaning/static/js/2.7abb16ed.chunk.js.map",
-    "index.html": "/start-cleaning/index.html",
-    "static/css/main.507ec98c.chunk.css.map": "/start-cleaning/static/css/main.507ec98c.chunk.css.map",
-    "static/js/2.7abb16ed.chunk.js.LICENSE.txt": "/start-cleaning/static/js/2.7abb16ed.chunk.js.LICENSE.txt",
-    "static/media/SCLogo.2a2c185e.png": "/start-cleaning/static/media/SCLogo.2a2c185e.png",
-    "static/media/style.module.css": "/start-cleaning/static/media/background4.06c6aae2.jpg",
-    "static/media/gloves.62ee0dfe.jpg": "/start-cleaning/static/media/gloves.62ee0dfe.jpg",
-    "static/media/open.bc10b7f2.jpg": "/start-cleaning/static/media/open.bc10b7f2.jpg",
-    "static/media/pride.ed5a3979.jpg": "/start-cleaning/static/media/pride.ed5a3979.jpg"
+    "main.css": "/static/css/main.17028593.chunk.css",
+    "main.js": "/static/js/main.4f8d7ad6.chunk.js",
+    "main.js.map": "/static/js/main.4f8d7ad6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3827154d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3827154d.js.map",
+    "static/js/2.25d4ac9b.chunk.js": "/static/js/2.25d4ac9b.chunk.js",
+    "static/js/2.25d4ac9b.chunk.js.map": "/static/js/2.25d4ac9b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.17028593.chunk.css.map": "/static/css/main.17028593.chunk.css.map",
+    "static/js/2.25d4ac9b.chunk.js.LICENSE.txt": "/static/js/2.25d4ac9b.chunk.js.LICENSE.txt",
+    "static/media/SCLogo.2a2c185e.png": "/static/media/SCLogo.2a2c185e.png",
+    "static/media/style.module.css": "/static/media/background4.06c6aae2.jpg",
+    "static/media/gloves.62ee0dfe.jpg": "/static/media/gloves.62ee0dfe.jpg",
+    "static/media/open.bc10b7f2.jpg": "/static/media/open.bc10b7f2.jpg",
+    "static/media/pride.ed5a3979.jpg": "/static/media/pride.ed5a3979.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.57f1952e.js",
-    "static/js/2.7abb16ed.chunk.js",
-    "static/css/main.507ec98c.chunk.css",
-    "static/js/main.bac90948.chunk.js"
+    "static/js/runtime-main.3827154d.js",
+    "static/js/2.25d4ac9b.chunk.js",
+    "static/css/main.17028593.chunk.css",
+    "static/js/main.4f8d7ad6.chunk.js"
   ]
 }
