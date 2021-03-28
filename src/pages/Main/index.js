@@ -233,7 +233,7 @@ export default function MainPage() {
                                     <Typography variant="body2" color="textSecondary" component="p">
                                         Monday - Friday
                                         <br />
-                                        8:00 AM - 5:00 PM
+                                        8:00 AM - 7:00 PM
                                         <br />
                                         Special hours and days are possible upon request
                                     </Typography>
