@@ -113,7 +113,9 @@ const useStyles = makeStyles((theme) => ({
         padding: '8px',
         backgroundColor: 'rgba(0, 0, 0, 0.6)',
         color: 'white',
-
+    },
+    buttonBox: {
+        margin: 'auto',
     },
     button: {
         margin: 'auto',
@@ -274,9 +276,9 @@ export default function MainPage() {
 
                                 <ThemeProvider theme={theme}>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        We at Start Cleaning pride ourselves on offering quality work at a fair price. since our beginning, our main goal has been to exceed the expectations of every client by cleaning your home or office as if it were our own.
+                                        We at Start Cleaning pride ourselves on offering quality work at a fair price. Since our beginning, our main goal has been to exceed the expectations of every client by cleaning your home or office as if it were our own.
                                     <br />
-                                    our team of seasoned professionals will clean your home to your exact specifications. for your home, we bring all of our own equipment and eco-friendly cleaning products.
+                                    Our team of seasoned professionals will clean your home to your exact specifications. For your home, we bring all of our own equipment and eco-friendly cleaning products.
                                     </Typography>
                                 </ThemeProvider>
 
@@ -285,10 +287,13 @@ export default function MainPage() {
 
                         </CardActionArea>
 
-                        <CardActions>
+                        <CardActions className={classes.buttonBox}>
 
                             <Button className={classes.button} size="small" href="tel:+18883700123" >
                                 Call
+                            </Button>
+                            <Button className={classes.button} size="small" href="sms:+14255510181" >
+                                Text
                             </Button>
 
                         </CardActions>
